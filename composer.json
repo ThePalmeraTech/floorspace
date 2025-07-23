@@ -1,0 +1,32 @@
+{
+  "name": "perfect-stays/floorspace-theme",
+  "description": "Perfect Stays WordPress theme for vacation rentals",
+  "type": "wordpress-theme",
+  "license": "MIT",
+  "homepage": "https://perfect-stays.com",
+  "authors": [
+    {
+      "name": "Perfect Stays Team",
+      "email": "dev@perfect-stays.com"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "theme",
+    "vacation-rental",
+    "property-management"
+  ],
+  "require": {
+    "php": ">=8.1"
+  },
+  "suggest": {
+    "wp-cli/wp-cli": "WordPress command line interface"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+} 

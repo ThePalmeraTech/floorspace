@@ -1,0 +1,141 @@
+/* About Hero Block Styles */
+.about-hero-section {
+    padding: 4rem 0;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.about-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    width: 100%;
+}
+
+.about-hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-hero-image {
+    position: relative;
+}
+
+.about-hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+}
+
+.about-hero-placeholder {
+    width: 100%;
+    aspect-ratio: 4/3;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.placeholder-content {
+    text-align: center;
+    opacity: 0.6;
+}
+
+.placeholder-content svg {
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.about-hero-text {
+    padding-left: 2rem;
+}
+
+.about-hero-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.about-hero-paragraph {
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.about-hero-paragraph p {
+    margin-bottom: 1.5rem;
+}
+
+.about-hero-paragraph p:last-child {
+    margin-bottom: 0;
+}
+
+/* Editor RichText Focus States */
+.about-hero-paragraph:focus {
+    outline: none;
+    border-color: #007cba !important;
+}
+
+.about-hero-paragraph:hover {
+    border-color: rgba(0, 124, 186, 0.3) !important;
+}
+
+.about-hero-signature {
+    font-size: 1.125rem;
+    font-style: italic;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Editor Specific Styles */
+.about-hero-section-editor {
+    padding: 4rem 2rem;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-hero-text {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .about-hero-heading {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .about-hero-section {
+        padding: 2rem 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-hero-container {
+        padding: 0 1rem;
+    }
+    
+    .about-hero-heading {
+        font-size: 1.75rem;
+    }
+    
+    .about-hero-paragraph {
+        font-size: 1rem;
+    }
+} 

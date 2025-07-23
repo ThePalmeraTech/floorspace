@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Perfect Stays Theme Styles */
+
+/* CSS Variables for Theme Customizer */
+:root {
+  --color-primary: #D9F275;
+  --color-button-text: #0F2F14;
+  --color-body: #3D3A3A;
+  --color-heading: #0B1134;
+  --color-background: #FFFFFF;
+  --font-site-title: 'Instrument Serif', serif;
+  --font-heading: 'Baskerville', serif;
+  --font-body: 'Instrument Sans', sans-serif;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-body);
+  color: var(--color-body);
+  background-color: var(--color-background);
+}
+
+/* Component Styles */
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 font-medium rounded-full transition-all duration-200;
+  background-color: var(--color-primary);
+  color: var(--color-button-text);
+}
+
+.btn-primary:hover {
+  @apply opacity-90;
+}
+
+/* Property Card Styles */
+.property-card {
+  @apply bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300;
+}
+
+.property-card__image img {
+  @apply w-full h-full object-cover hover:scale-105 transition-transform duration-300;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  color: var(--color-heading);
+}
+
+.site-title {
+  font-family: var(--font-site-title);
+}
+
+/* Layout */
+.container {
+  @apply max-w-6xl mx-auto px-6;
+}
+
+/* Navigation */
+.site-header {
+  @apply bg-white border-b border-gray-100 sticky top-0 z-50;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .property-grid {
+    @apply grid-cols-1;
+  }
+} 
